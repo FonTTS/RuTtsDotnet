@@ -17,7 +17,7 @@ private static int waveBufferSize = 4096;
 
 public static void Transfer(RuTtsConfig config, string text, RuTtsCallback callback)
     {
-        Transfer(config, text, waveBuffer, 4096, callback, IntPtr.Zero);
+        Transfer(config, text, waveBuffer, waveBufferSize, callback, IntPtr.Zero);
             //Marshal.FreeHGlobal(waveBuffer);
     }
 
